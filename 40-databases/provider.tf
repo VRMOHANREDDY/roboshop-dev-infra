@@ -8,7 +8,7 @@ terraform {
 
     backend "s3" {
     bucket         = "remote-ram-devops"
-    key            = "roboshop-sg-tfstate"  # s3 bucket created with this name
+    key            = "roboshop-databases-tfstate"  # s3 bucket created with this name
     region         = "us-east-1"
     encrypt        = true
     use_lockfile   = true # Activates native S3 state locking
