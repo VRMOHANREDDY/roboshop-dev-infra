@@ -11,7 +11,13 @@
 			"Effect": "Allow",
 			"Resource": "*",
 			"Sid": "VisualEditor1"
-		}
+		},
+		   {
+            "Action": "secretsmanager:GetSecretValue",
+            "Effect": "Allow",
+            "Resource": "arn:aws:secretsmanager:us-east-1:301435234191:secret:roboshop/mysql_root_password-*",
+            "Sid": "VisualEditor2"
+        }
 	],
 	"Version": "2012-10-17"
 }
