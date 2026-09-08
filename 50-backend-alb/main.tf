@@ -45,10 +45,3 @@ resource "aws_route53_record" "www" {
   allow_overwrite = true
 }
 
-resource "aws_ssm_parameter" "backend_alb_listener_arn" {
-  name  = "/roboshop/${var.environment}/backend_alb_listener_arn"
-  type  = "String"
-  value = aws_lb_listener.http.arn
-
-  tags = local.common_tags
-}
