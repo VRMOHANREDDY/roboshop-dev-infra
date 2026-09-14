@@ -3,7 +3,7 @@
 		{
 			"Action": "ssm:GetParameter",
 			"Effect": "Allow",
-			"Resource": "arn:aws:ssm:us-east-1:301435234191:parameter/roboshop/dev/mysql_root_password",
+			"Resource": "arn:aws:ssm:us-east-1:514670561614:parameter/roboshop/dev/mysql_root_password",
 			"Sid": "VisualEditor0"
 		},
 		{
@@ -15,7 +15,7 @@
 		   {
             "Action": "secretsmanager:GetSecretValue",
             "Effect": "Allow",
-            "Resource": "arn:aws:secretsmanager:us-east-1:301435234191:secret:roboshop/mysql_root_password-*",
+            "Resource": "arn:aws:secretsmanager:us-east-1:514670561614:secret:roboshop/mysql_root_password-*",
             "Sid": "VisualEditor2"
         }
 	],
