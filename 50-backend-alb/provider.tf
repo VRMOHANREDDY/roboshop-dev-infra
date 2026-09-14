@@ -7,7 +7,7 @@ terraform {
   }
 
     backend "s3" {
-    bucket         = "remote-ram-devops"
+    bucket         = "remote-ram-devops-new"
     key            = "roboshop-backend-alb-tfstate"  # s3 bucket created with this name
     region         = "us-east-1"
     encrypt        = true
